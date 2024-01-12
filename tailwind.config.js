@@ -24,7 +24,7 @@ animation:{
       lgm: { max: "1140px" },
       md: { max: "990px" },
       sm: { max: "600px" },
-      xs: { max: "400px" },
+      xs: { max: "300px" },
       minmd: "1700px",
       minlg: "2100px",
     },
