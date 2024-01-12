@@ -3,7 +3,7 @@ import logo from '../imgs/Screenshot 2024-01-10 223757.png';
 const Navbar = () => {
   return (
     <div className='bg-slate-300 flex flex-row h-60 w-full py-10'>
-        <img src={logo} className='h-40 w-48 mx-5'alt="Example"/>
+        <img src={logo} className='h-40 w-48 mx-5'alt="company logo"/>
       <div className='px-18 mx-7 text-2xl'>About Us</div>
       <div className='mx-7 text-2xl'>Results</div>
       <div className='mx-7 text-2xl'>Testimonials</div>
