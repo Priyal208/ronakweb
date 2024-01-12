@@ -17,10 +17,10 @@ const Facilities = () => {
       <div className='text-6xl font-semibold text-center'>
         <p>OUR FACILITIES </p>
       </div>
-      <div className='flex flex-row'>
+      <div className='flex flex-row sm:flex-col'>
       {/* Facility 1 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 0 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(0)}
@@ -36,7 +36,7 @@ const Facilities = () => {
 
       {/* Facility 2 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 1 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(1)}
@@ -52,7 +52,7 @@ const Facilities = () => {
 
       {/* Facility 3 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  m-5 shadow-md card ${
           hoveredIndex === 2 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(2)}
@@ -66,10 +66,10 @@ const Facilities = () => {
         </p>
       </div>
       </div>
-      <div className='flex flex-row'>
+      <div className='flex flex-row sm:flex-col'>
       {/* Facility 4 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 3 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(3)}
@@ -85,7 +85,7 @@ const Facilities = () => {
 
       {/* Facility 5 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 4 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(4)}
@@ -101,7 +101,7 @@ const Facilities = () => {
 
       {/* Facility 6 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 5 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(5)}
@@ -115,10 +115,10 @@ const Facilities = () => {
         </p>
       </div>
       </div>
-      <div className='flex flex-row'>
+      <div className='flex flex-row sm:flex-col'>
       {/* Facility 7 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col  items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 6 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(6)}
@@ -134,7 +134,7 @@ const Facilities = () => {
 
       {/* Facility 8 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 7 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(7)}
@@ -150,7 +150,7 @@ const Facilities = () => {
 
       {/* Facility 9 */}
       <div
-        className={`h-[30%] w-full flex flex-col items-center justify-center p-7  shadow-md card ${
+        className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${
           hoveredIndex === 8 ? 'hovered' : ''
         }`}
         onMouseEnter={() => handleMouseEnter(8)}
