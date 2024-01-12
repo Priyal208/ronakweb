@@ -3,9 +3,10 @@ import ImageCarousel from '../components/ImageCaraousel.jsx';
 import AboutUs from '../components/AboutUs.jsx';
 import Video from '../components/Video.jsx';
 import Facilities from '../components/Facilities.jsx';
+// Homepage.jsx
 const Homepage = () => {
   return (
-    <div>
+    <div className='body'>
       <ImageCarousel />
       <AboutUs />
       <Video />
@@ -13,5 +14,6 @@ const Homepage = () => {
     </div>
   );
 };
+
 
 export default Homepage;
