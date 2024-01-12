@@ -157,3 +157,81 @@
     )
     1 100%;
 }
+
+
+
+.gradient-background {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: 1px 1px 20px 3px rgba(226, 105, 234, 0.516);
+
+}
+
+
+.gradient-background::before {
+  content: '';
+  position: absolute;
+  top: -140%;
+  left: -30%;
+ z-index: -1;
+  width: 150%;
+  height: 400%;
+  background: conic-gradient(rgb(228, 41, 144), rgb(82, 194, 225), rgb(137, 17, 188), rgba(133, 124, 129, 0.103));
+  animation: moveGradient 5s linear infinite;
+}
+.gradient-background::after{
+  content: '';
+  position: absolute;
+  top: -140%;
+  left: -30%;
+  z-index: -1;
+  width: 150%;
+  height: 400%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+ 
+}
+@keyframes moveGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.imgbg {
+  border-radius: 2px;
+  border: solid;
+  border-color: black;
+  margin: 1%;
+}
+.text1{
+  position: absolute;
+  z-index: 20;
+  
+}
+.maincontainer{
+  position: relative;
+  }
+  .overlay{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.449);
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.129),rgba(0, 0, 0, 0.858));
+  backdrop-filter: blur(20px);
+  transition: .5s ease;
+  height: 0;
+  }
+  .maincontainer:hover .overlay{
+    height: 100%;
+  }
+  .borderzz{
+    border: 2px solid #007bff; /* Set border color and width */
+  border-radius: 5px; /* Add rounded corners */
+  color: #007bff; 
+  }

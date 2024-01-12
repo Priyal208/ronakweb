@@ -7,10 +7,12 @@ import Courses from "../components/Courses.jsx";
 
 
 
+
 const Homepage = () => {
   return (
     <div>   
       <Navbar2/>
+     
       <Courses/> 
       <Footer/>
     </div>
