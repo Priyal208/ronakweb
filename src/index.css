@@ -2,11 +2,287 @@
 @tailwind components;
 @tailwind utilities;
 
+/*NAVBAR CSS*/
+.navbar2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Adjust the z-index value as needed */
+  /* Additional styles */
+}
+.imglogo {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.btn {
+  position: relative;
+  padding: 1em 0;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(2, 11, 73),
+    rgba(247, 248, 242, 0)
+  );
+  bottom: 0;
+  left: 0;
+}
+.btn-center::after {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+.btn-center:hover::after {
+  transform: scale(1, 1);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(2, 11, 73),
+    rgba(247, 248, 242, 0)
+  );
+  top: 0;
+  left: 0;
+}
+.btn-center::before {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+.btn-center:hover::before {
+  transform: scale(1, 1);
+}
+.facard {
+  position: relative;
+}
+
+/*FOOTER CSS*/
+.icons {
+  background: transparent;
+  top: -10px;
+  color: blue;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.icons a::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -30px;
+  left: 0;
+  background: linear-gradient(
+    40deg,
+    rgb(246, 126, 28),
+    rgb(221, 54, 54),
+    rgb(250, 41, 118),
+    rgb(214, 18, 214)
+  );
+  position: absolute;
+  transition: 0.5s;
+}
+.icons a .fab {
+  font-size: 30px;
+  z-index: 20;
+  position: absolute;
+  color: white;
+}
+.icons a:hover::after {
+  top: 0;
+}
+
+.icons:nth-child(1) a::after {
+  background: linear-gradient(
+    40deg,
+    rgb(246, 126, 28),
+    rgb(221, 54, 54),
+    rgb(250, 41, 118),
+    rgb(214, 18, 214)
+  );
+}
+
+.icons:nth-child(2) a::after {
+  background: linear-gradient(40deg, #96d4fb, #1da1f2);
+}
+.icons:nth-child(4) a::after {
+  background: linear-gradient(40deg, rgb(4, 51, 98), rgb(10, 102, 194));
+}
+
+.icons:nth-child(5) a::after {
+  background: linear-gradient(
+    40deg,
+    rgb(0, 255, 255),
+    rgb(0, 191, 255),
+    rgb(0, 128, 255),
+    rgb(0, 64, 255)
+  );
+}
+.icons:nth-child(3) a::after {
+  background: red;
+}
+
+.f01 {
+  position: absolute;
+  bottom: 0;
+}
+
+.ico {
+  @apply pl-1 pt-1 fab hover:text-white md:w-5 md:h-5 md:pt-[5px] md:pl-[5px];
+}
+.vl {
+  position: relative;
+  border-right: 1px solid gray;
+  height: 500px;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.01),
+      rgb(146, 145, 145),
+      rgba(255, 255, 255, 0.01)
+    )
+    1 100%;
+}
+
+
+
+.gradient-background {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: 1px 1px 20px 3px rgba(246, 239, 245, 0.782);
+
+}
+
+
+.gradient-background::before {
+  content: '';
+  position: absolute;
+  top: -140%;
+  left: -30%;
+ z-index: -1;
+  width: 150%;
+  height: 400%;
+  background: conic-gradient(rgb(253, 22, 149), rgb(98, 9, 171), rgb(41, 96, 225), rgba(133, 124, 129, 0.103));
+  animation: moveGradient 5s linear infinite;
+}
+.gradient-background::after{
+  content: '';
+  position: absolute;
+  top: -140%;
+  left: -30%;
+  z-index: -1;
+  width: 150%;
+  height: 400%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+ 
+}
+@keyframes moveGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.imgbg {
+  border-radius: 2px;
+  border: solid;
+  border-color: black;
+  margin: 1%;
+}
+.text1{
+  position: absolute;
+  z-index: 20;
+  
+}
+.maincontainer{
+  position: relative;
+  }
+  .overlay{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.449);
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.129),rgba(0, 0, 0, 0.858));
+  backdrop-filter: blur(20px);
+  transition: .5s ease;
+  height: 0;
+  }
+  .maincontainer:hover .overlay{
+    height: 100%;
+  }
+  .borderzz{
+    border: 2px solid #007bff; /* Set border color and width */
+  border-radius: 5px; /* Add rounded corners */
+  color: #007bff; 
+  }
+.bordunder{
+  border-bottom: 2px solid red;
+}
+
+
+/*EVENTS CSS FILE*/
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.imageof{
+  width:150px;
+  height: 95%;
+  margin: 5px;
+  background: url(imgs/Mishraji.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skew(-10deg,0);
+  filter: grayscale(0.7);
+  transition: width 0.5s;
+}
+@media (max-width: 600px) {
+  .imageof {
+    filter: grayscale(0); /* Remove grayscale filter below 600px */
+  }
+}
+.imageof h1{
+  position: absolute;
+  bottom: 0;
+  color: rgb(246, 243, 243);
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+}
+.imageof:hover{
+  width: 700px;
+  filter: brightness(1);
+}
 /* ImageCarousel.css */
 .carousel-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  
   overflow: hidden;
   
 }
@@ -21,6 +297,8 @@
 /* Facilities css */
 .card {
   transition: transform 0.5s ease-in-out;
+  background: white;
+  
 }
 .hovered {  
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -28,6 +306,7 @@
 	background-size: 400% 400%;
    
     transform: scale(1.03);
+  
 }
 @keyframes gradient {
 	0% {
@@ -45,11 +324,12 @@
 }
 .imgcard{
   position:relative;
+  z-index: 3;
  }
  .imgcard::after{
   content: '';
   position: absolute;
-  background-color: #ffffff;
+  background-color: #f6efef;
   width: 100%;
   height: 100%;
   top:0;
@@ -61,88 +341,4 @@
 
  .body {
   overflow-x: hidden;
-}
-
-.btn{
-  border-radius: 15px; /* Adjust the border-radius for a rounded rectangle */
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  width: 45%;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(0); /* Initial backdrop filter set to none */
-  color: #fff;
-}
-
-.btn2 {
-  border-radius: 15px; /* Adjust the border-radius for a rounded rectangle */
-  background: linear-gradient(-45deg, #9c7dd9, #e1c1e7, #e182cb, #a66ee6);
-  width: 45%; /* Adjust the width as needed */
-  padding: 10px;
-  color: #fff;
-
-  /* Animation and Shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(0); /* Initial backdrop filter set to none */
-}
-
-/* Hover effect */
-.btn2:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(100px); /* Add backdrop filter on hover */
-}
-
-
-.btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(100px); /* Add backdrop filter on hover */
-}
-
-/* Button */ 
-
-.circular-button{
-  border-radius: 100%; /* Adjust the border-radius for a rounded rectangle */
-  background: linear-gradient(-45deg, #9c7dd9, #e1c1e7, #e182cb, #a66ee6);
-  width: 50px;
-  height: 50px; /* Adjust the width as needed */
-  padding: 10px;
-  color: #fff;
-
-  /* Animation and Shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(0); 
-}
-
-/* Testimonials.css */
-
-.testimonial-image {
-  transition: filter 0.3s ease-in-out;
-}
-
-.logo-container {
-  position: relative;
-}
-
-.logo-image {
-  transition: filter 0.3s ease-in-out;
-}
-
-.logo-container:hover .logo-image {
-  filter: blur(5px); /* Add the desired blur effect */
-}
-
-.play-button-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.logo-container:hover .play-button-container {
-  opacity: 1;
 }
