@@ -29,8 +29,8 @@ const Homepage = () => {
       <Testimonials />
       <Results />    
       <ContactUs />
-      <OurApp />
       <Video />
+      <OurApp />
       <Footer />
       
     </div>

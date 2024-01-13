@@ -20,7 +20,7 @@ const OurApp = () => {
           </p>
           <div className=' text-center'>
             <button
-              className=' text-3xl md:text-xl sm:text-xs border-spacing-2 border-4 border-gray-900 btn p-2'
+              className=' text-3xl md:text-xl sm:text-xs border-spacing-2 border-gray-900 btn1 p-2'
               onClick={handleButtonClick}
             >
               DOWNLOAD NOW!

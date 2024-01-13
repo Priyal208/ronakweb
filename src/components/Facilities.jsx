@@ -13,7 +13,7 @@ const Facilities = () => {
   };
 
   return (
-    <div className='px-5 py-40'>
+    <div className='px-5 py-40 bg-gray-300'>
       <div className='text-6xl font-semibold text-center'>
         <p>OUR FACILITIES </p>
       </div>
@@ -26,7 +26,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(0)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 1' />
+        <div className='imgcard relative'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 1 Title</p>
         <p>
           Facility 1 Description. Replace this text with your facility's
@@ -42,7 +44,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(1)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 2' />
+       <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 2 Title</p>
         <p>
           Facility 2 Description. Replace this text with your facility's
@@ -58,7 +62,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(2)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 3' />
+        <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 3 Title</p>
         <p>
           Facility 3 Description. Replace this text with your facility's
@@ -75,7 +81,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(3)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 4' />
+       <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 4 Title</p>
         <p>
           Facility 4 Description. Replace this text with your facility's
@@ -91,7 +99,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(4)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 5' />
+     <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 5 Title</p>
         <p>
           Facility 5 Description. Replace this text with your facility's
@@ -107,7 +117,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(5)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 6' />
+       <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 6 Title</p>
         <p>
           Facility 6 Description. Replace this text with your facility's
@@ -124,7 +136,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(6)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 7' />
+        <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 7 Title</p>
         <p>
           Facility 7 Description. Replace this text with your facility's
@@ -140,7 +154,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(7)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 8' />
+       <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 8 Title</p>
         <p>
           Facility 8 Description. Replace this text with your facility's
@@ -156,7 +172,9 @@ const Facilities = () => {
         onMouseEnter={() => handleMouseEnter(8)}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={i1} className='m-10' alt='Facility 9' />
+       <div className='imgcard'>
+        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        </div>
         <p className='text-3xl text-center'>Facility 9 Title</p>
         <p>
           Facility 9 Description. Replace this text with your facility's

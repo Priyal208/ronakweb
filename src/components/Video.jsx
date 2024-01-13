@@ -8,8 +8,8 @@ const Video = () => {
   }, []);
 
   return (
-    <div>
-        <div className='text-6xl font-semibold text-center  '>
+    <div className='bg-slate-400 '>
+        <div className='text-6xl font-semibold text-center '>
         <p>YOUTUBE VIDEOS </p>
         </div>
       <div className="flex lg:flex-row sm:flex-col md: flex wrap items-center justify-center h-[50%] w-[100%]" id="glimpses">

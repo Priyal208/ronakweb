@@ -14,6 +14,8 @@ const Events = () => {
             <div className="imageof"><h1>Event1</h1></div>
             <div className="imageof"><h1>Event1</h1></div>
             <div className="imageof"><h1>Event1</h1></div>
+            <div className="imageof"><h1>Event1</h1></div>
+            <div className="imageof"><h1>Event1</h1></div>
             
             </div>
         </div>
