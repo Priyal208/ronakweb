@@ -2,7 +2,7 @@ import React from "react";
 import i1 from "../imgs/Untitled design.jpg"
 const Navbar2 = () => {
   return (
-    <div className=" navbar2 w-full h-[85px]  bg-gray-300/0 backdrop-blur-xl  shadow-black/60 shadow-md">
+    <div className=" navbar2 w-full h-[85px]  bg-gray-300/30 backdrop-blur-xl  shadow-black/60 shadow-md">
       <div className="mx-36 mt-2">
       <img src={i1} alt="logoimg" className=" ring-4 ring-gray-300 imglogo h-[27vh] w-[27vh] " />
       </div>

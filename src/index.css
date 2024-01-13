@@ -164,7 +164,7 @@
   position: relative;
   overflow: hidden;
   z-index: 0;
-  box-shadow: 1px 1px 20px 3px rgba(226, 105, 234, 0.516);
+  box-shadow: 1px 1px 20px 3px rgba(246, 239, 245, 0.782);
 
 }
 
@@ -177,7 +177,7 @@
  z-index: -1;
   width: 150%;
   height: 400%;
-  background: conic-gradient(rgb(228, 41, 144), rgb(82, 194, 225), rgb(137, 17, 188), rgba(133, 124, 129, 0.103));
+  background: conic-gradient(rgb(253, 22, 149), rgb(98, 9, 171), rgb(41, 96, 225), rgba(133, 124, 129, 0.103));
   animation: moveGradient 5s linear infinite;
 }
 .gradient-background::after{
@@ -235,3 +235,108 @@
   border-radius: 5px; /* Add rounded corners */
   color: #007bff; 
   }
+.bordunder{
+  border-bottom: 2px solid red;
+}
+
+
+/*EVENTS CSS FILE*/
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.imageof{
+  width:150px;
+  height: 95%;
+  margin: 5px;
+  background: url(imgs/Mishraji.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skew(-10deg,0);
+  filter: grayscale(0.7);
+  transition: width 0.5s;
+}
+@media (max-width: 600px) {
+  .imageof {
+    filter: grayscale(0); /* Remove grayscale filter below 600px */
+  }
+}
+.imageof h1{
+  position: absolute;
+  bottom: 0;
+  color: rgb(246, 243, 243);
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+}
+.imageof:hover{
+  width: 700px;
+  filter: brightness(1);
+}
+/* ImageCarousel.css */
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px; 
+  overflow: hidden;
+}
+
+/* Facilities css */
+.card {
+  transition: transform 0.5s ease-in-out;
+  background: white;
+  
+}
+.hovered {  
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 5s ease infinite;
+	background-size: 400% 400%;
+   
+    transform: scale(1.03);
+  
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.hovered p.text-3xl {
+  color: white;
+}
+.imgcard{
+  position:relative;
+  z-index: 3;
+ }
+ .imgcard::after{
+  content: '';
+  position: absolute;
+  background-color: #f6efef;
+  width: 100%;
+  height: 100%;
+  top:0;
+ z-index: -1;
+ border-radius: 50%;
+ box-shadow: 0px 1px 3px 0px black;
+
+ }
+
+ .body {
+  overflow-x: hidden;
+}
