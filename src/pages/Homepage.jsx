@@ -1,4 +1,12 @@
 import React from "react";
+import ImageCarousel from '../components/ImageCaraousel.jsx'; 
+import AboutUs from '../components/AboutUs.jsx';
+import Video from '../components/Video.jsx';
+import Facilities from '../components/Facilities.jsx';
+import OurApp from '../components/OurApp.jsx';
+import ContactUs from '../components/ContactUs.jsx';
+import Testimonials from '../components/Testimonials.jsx';
+// Homepage.jsx
 
 import Navbar2 from "../components/Navbar2";
 
@@ -13,12 +21,21 @@ const Homepage = () => {
   return (
     <div className="body">
       <Navbar2 />
-      <Results />
+      <ImageCarousel />
+      <AboutUs /> 
       <Courses />
       <Events />
+      <Facilities />
+      <Testimonials />
+      <Results />    
+      <ContactUs />
+      <OurApp />
+      <Video />
       <Footer />
+      
     </div>
   );
 };
+
 
 export default Homepage;
