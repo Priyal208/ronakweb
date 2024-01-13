@@ -28,7 +28,6 @@
 	background-size: 400% 400%;
    
     transform: scale(1.03);
-  
 }
 @keyframes gradient {
 	0% {
@@ -62,4 +61,88 @@
 
  .body {
   overflow-x: hidden;
+}
+
+.btn{
+  border-radius: 15px; /* Adjust the border-radius for a rounded rectangle */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 45%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0); /* Initial backdrop filter set to none */
+  color: #fff;
+}
+
+.btn2 {
+  border-radius: 15px; /* Adjust the border-radius for a rounded rectangle */
+  background: linear-gradient(-45deg, #9c7dd9, #e1c1e7, #e182cb, #a66ee6);
+  width: 45%; /* Adjust the width as needed */
+  padding: 10px;
+  color: #fff;
+
+  /* Animation and Shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0); /* Initial backdrop filter set to none */
+}
+
+/* Hover effect */
+.btn2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(100px); /* Add backdrop filter on hover */
+}
+
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(100px); /* Add backdrop filter on hover */
+}
+
+/* Button */ 
+
+.circular-button{
+  border-radius: 100%; /* Adjust the border-radius for a rounded rectangle */
+  background: linear-gradient(-45deg, #9c7dd9, #e1c1e7, #e182cb, #a66ee6);
+  width: 50px;
+  height: 50px; /* Adjust the width as needed */
+  padding: 10px;
+  color: #fff;
+
+  /* Animation and Shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0); 
+}
+
+/* Testimonials.css */
+
+.testimonial-image {
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo-container {
+  position: relative;
+}
+
+.logo-image {
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo-container:hover .logo-image {
+  filter: blur(5px); /* Add the desired blur effect */
+}
+
+.play-button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo-container:hover .play-button-container {
+  opacity: 1;
 }
