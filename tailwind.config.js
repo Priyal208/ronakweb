@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -24,7 +26,7 @@ animation:{
       lgm: { max: "1140px" },
       md: { max: "990px" },
       sm: { max: "600px" },
-      xs: { max: "400px" },
+      xs: { max: "300px" },
       minmd: "1700px",
       minlg: "2100px",
     },
@@ -43,4 +45,3 @@ animation:{
   },
   plugins: [],
 };
-
