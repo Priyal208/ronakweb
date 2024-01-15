@@ -6,7 +6,7 @@ const ContactUs = () => {
       window.location.href = 'https://www.youtube.com/@ronakinstitute1990';
     };
   return (
-    <div className='flex flex-row m-10 '>
+    <div className='flex flex-row m-10' id='contact'>
     <div className='w-[40%] flex flex-col' data-aos="fade-right">
       <div>
         <p className='text-5xl md:text-2xl text-center font-bold ' >CONTACT US</p>

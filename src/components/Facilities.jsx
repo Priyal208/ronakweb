@@ -13,7 +13,8 @@ const Facilities = () => {
   };
 
   return (
-    <div className='px-5 py-40 bg-gray-300'>
+    
+    <div className='px-5 py-40 bg-gray-300' id='facilities'>
       <div className='text-6xl font-semibold text-center'>
         <p>OUR FACILITIES </p>
       </div>

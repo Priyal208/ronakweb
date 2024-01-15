@@ -4,7 +4,7 @@ import c2 from '../imgs/Cour5.jpg';
 import { Link } from "react-router-dom";
 const Courses = () => {
     return (
-  <div className=' bg-slate-400 pb-10'>
+  <div className=' bg-slate-400 pb-10' id='courses'>
     <div className='text-black  text-center font-semibold text-[50px]'>COURSES</div>
   
       <div className="w-full h-[65vh] flex md:flex-col md:space-y-10 md:space-x-0  items-center justify-center space-x-32">

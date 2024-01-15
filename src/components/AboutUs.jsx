@@ -25,7 +25,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className='flex flex-wrap lg:flex-row py-20'>
+    <div className='flex flex-wrap lg:flex-row py-20' id='about'>
       <div className='lg:w-[50%] p-5 order-last lg:order-first sm:w-[100%]'>
         <p className='text-5xl md:text-2xl text-center font-semibold '>ABOUT US</p>
         <p className='py-10 text-center p-5 md:text-sm'>

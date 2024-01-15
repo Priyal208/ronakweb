@@ -6,7 +6,7 @@ import r4 from '../imgs/Cour3.webp'
 
 const Results = () => {
   return (
-  <div className=' bg-slate-400'>
+  <div className=' bg-slate-400' id='results'>
   <div className='text-center font-medium text-[60px]'>RESULTS</div>
     <div className='w-full h-[90vh] flex gap-4 p-4 sm:flex-col sm:h-1/2 sm:justify-center sm:items-center'>
      <div className='w-[35%] h-[100%] overflow-hidden sm:w-[90%] '>

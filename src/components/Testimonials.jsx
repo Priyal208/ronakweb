@@ -28,7 +28,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className='flex flex-wrap mb-20'>
+    <div className='flex flex-wrap mb-20' id='testimonials'>
       <div className='w-[100%] text-center my-5'>
         <p className='text-5xl md:text-2xl text-center font-semibold '>TESTIMONIALS</p>
       </div>
