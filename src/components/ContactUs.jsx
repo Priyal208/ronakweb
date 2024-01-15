@@ -6,7 +6,7 @@ const ContactUs = () => {
       window.location.href = 'https://www.youtube.com/@ronakinstitute1990';
     };
   return (
-    <div className='flex flex-row m-10'>
+    <div className='flex flex-row m-10 '>
     <div className='w-[40%] flex flex-col' data-aos="fade-right">
       <div>
         <p className='text-5xl md:text-2xl text-center font-bold ' >CONTACT US</p>
@@ -15,7 +15,7 @@ const ContactUs = () => {
         </p>
         <div className=' text-center'>
           <button
-            className=' text-3xl md:text-xl sm:text-xs border-spacing-2 border-4 border-gray-900 btn2 p-2'
+            className=' text-3xl md:text-xl sm:text-xs border-spacing-2  border-gray-900 btn2 p-2'
             onClick={handleButtonClick}
           >
             CLICK HERE!
