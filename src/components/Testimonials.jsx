@@ -5,7 +5,7 @@ import { FaArrowLeft, FaArrowRight, FaPlay } from 'react-icons/fa';
 import logo from '../imgs/Screenshot 2024-01-10 223757.png';
 import i1 from '../imgs/Screenshot 2024-01-13 195848.png';
 import i2 from '../imgs/Screenshot 2024-01-13 195905.png';
-
+import '../global.css'
 
 const Testimonials = () => {
   const images = [i1, i2, i1, i2, i1];
@@ -28,11 +28,11 @@ const Testimonials = () => {
   };
 
   return (
-    <div className='flex flex-wrap mb-20'>
+    <div className='flex flex-wrap mb-20 py-20'>
       <div className='w-[100%] text-center my-5'>
-        <p className='text-5xl md:text-2xl text-center font-semibold '>TESTIMONIALS</p>
+        <p className='text-6xl md:text-2xl text-center '>TESTIMONIALS</p>
       </div>
-      <div className='lg:w-[47%] md:w-[100%] items-center my-5 m-5 relative '>
+      <div className='lg:w-[47%] md:w-[100%] items-center my-5 m-5 relative pt-10'>
         <img
           className='testimonial-image'
           src={images[currentIndex]}

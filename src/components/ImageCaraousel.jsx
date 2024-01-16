@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../index.css';
 import i3 from '../imgs/Specially for.png';
+import '../global.css'
 
 const ImageCarousel = () => {
   const carouselSettings = {
