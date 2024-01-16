@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import i3 from '../imgs/sr_mishra_home.jpg';
+import '../global.css'
 
 const AboutUs = () => {
   const [experience, setExperience] = useState(0);
@@ -27,7 +28,7 @@ const AboutUs = () => {
   return (
     <div className='flex flex-wrap lg:flex-row py-20' id='about'>
       <div className='lg:w-[50%] p-5 order-last lg:order-first sm:w-[100%]'>
-        <p className='text-5xl md:text-2xl text-center font-semibold '>ABOUT US</p>
+        <p className='text-6xl md:text-2xl text-center '>ABOUT US</p>
         <p className='py-10 text-center p-5 md:text-sm'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum dolorum placeat nostrum quibusdam minima est, pariatur odio non odit, perspiciatis illo doloribus, aliquam facere perferendis ipsa repudiandae ipsum totam veritatis architecto incidunt maiores numquam excepturi obcaecati. Accusantium deserunt alias ratione optio aliquam obcaecati maxime eius iusto, quisquam temporibus corrupti rem itaque placeat, quis nostrum quia pariatur voluptatem laborum ad distinctio. Expedita dicta, at impedit sapiente laboriosam dolores, voluptatem modi neque reiciendis dolorem fuga deserunt eveniet voluptates nulla explicabo eaque nostrum consectetur repellendus aliquid corrupti eos repellat. Laboriosam doloremque officia quos beatae iure accusantium harum, ipsum omnis asperiores commodi hic! Eveniet debitis, nesciunt quam non nobis alias atque, quos ea itaque, sunt dolore. Consequuntur perferendis esse officia porro omnis pariatur mollitia, commodi excepturi nihil saepe numquam dolore similique culpa adipisci suscipit perspiciatis eum rerum ab quasi quia quam ipsa doloremque impedit assumenda. Ab, aspernatur facilis.
         </p>

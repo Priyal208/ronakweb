@@ -3,10 +3,11 @@ import r1 from '../imgs/Res1.avif'
 import r2 from '../imgs/Res2.jpg'
 import r3 from '../imgs/Cour1.png'
 import r4 from '../imgs/Cour3.webp'
+import '../global.css'
 
 const Results = () => {
   return (
-  <div className=' bg-slate-400' id='results'>
+  <div className=' bg-slate-400 py-20' id='results'>
   <div className='text-center font-medium text-[60px]'>RESULTS</div>
     <div className='w-full h-[90vh] flex gap-4 p-4 sm:flex-col sm:h-1/2 sm:justify-center sm:items-center'>
      <div className='w-[35%] h-[100%] overflow-hidden sm:w-[90%] '>

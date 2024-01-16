@@ -2,12 +2,14 @@ import React from 'react';
 import c1 from '../imgs/Cour4.jpg';
 import c2 from '../imgs/Cour5.jpg';
 import { Link } from "react-router-dom";
+import '../global.css'
 const Courses = () => {
     return (
-  <div className=' bg-slate-400 pb-10' id='courses'>
-    <div className='text-black  text-center font-semibold text-[50px]'>COURSES</div>
+  <div className=' bg-slate-400 pb-10 py-20' id='courses'>
+    <div className='text-black  text-center text-6xl '>COURSES</div>
+
   
-      <div className="w-full h-[65vh] flex md:flex-col md:space-y-10 md:space-x-0  items-center justify-center space-x-32">
+      <div className="w-full h-[65vh] flex md:flex-col md:space-y-10 md:space-x-0  items-center justify-center space-x-32 ">
         
         <div className='w-[40%] md:w-[85%] maincontainer h-[70%] overflow-hidden rounded-lg position-relative gradient-background'>
             <div className='overlay'>

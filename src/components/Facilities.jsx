@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import i1 from '../imgs/online_test.png';
+import '../global.css'
 
 const Facilities = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -14,11 +15,11 @@ const Facilities = () => {
 
   return (
     
-    <div className='px-5 py-40 bg-gray-300' id='facilities'>
+    <div className='px-5 py-20 bg-gray-300' id='facilities'>
       <div className='text-6xl font-semibold text-center'>
         <p>OUR FACILITIES </p>
       </div>
-      <div className='flex flex-row sm:flex-col'>
+      <div className='flex flex-row sm:flex-col pt-10'>
       {/* Facility 1 */}
       <div
         className={`h-[30%] w-full flex flex-col items-center justify-center p-7 m-5 shadow-md card ${

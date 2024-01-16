@@ -8,6 +8,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
+import '../global.css'
 
 const Footer = () => {
   return (     

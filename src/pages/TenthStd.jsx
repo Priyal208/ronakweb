@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import n1 from '../imgs/Ninth1.jpg';
 import Footer from '../components/Footer';
 import { RxDoubleArrowDown } from 'react-icons/rx';
-
+import '../global.css'
 const TenthStd = () => {
   const [isFirstExpanded, setFirstExpanded] = useState(false);
   const [isSecondExpanded, setSecondExpanded] = useState(false);
