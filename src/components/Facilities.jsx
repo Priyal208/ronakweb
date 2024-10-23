@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import i1 from '../imgs/online_test.png';
+import i1 from '../imgs/facilities/1.png';
+import i2 from '../imgs/facilities/2.png';
+import i3 from '../imgs/facilities/3.png';
+import i4 from '../imgs/facilities/4.png';
+import i5 from '../imgs/facilities/5.png';
+import i6 from '../imgs/facilities/6.png';
+import i7 from '../imgs/facilities/7.png';
+import i8 from '../imgs/facilities/8.png';
+import i9 from '../imgs/facilities/9.png';
 import '../global.css'
 
 const Facilities = () => {
@@ -31,10 +39,9 @@ const Facilities = () => {
         <div className='imgcard relative'>
         <img src={i1} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 1 Title</p>
+        <p className='text-3xl text-center'>Highly Qualified & Expert Faculties</p>
         <p>
-          Facility 1 Description. Replace this text with your facility's
-          description.
+        Learn from experienced educators who specialize in delivering personalized attention and in-depth subject knowledge.
         </p>
       </div>
 
@@ -47,12 +54,11 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
        <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i2} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 2 Title</p>
+        <p className='text-3xl text-center'>Regular Test & Evaluation</p>
         <p>
-          Facility 2 Description. Replace this text with your facility's
-          description.
+        Stay on top of your progress with frequent assessments that track understanding and prepare you for board exams and beyond.
         </p>
       </div>
 
@@ -65,12 +71,11 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
         <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i3} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 3 Title</p>
+        <p className='text-3xl text-center'>Doubt Solving Sessions</p>
         <p>
-          Facility 3 Description. Replace this text with your facility's
-          description.
+        Clear your concepts instantly with dedicated doubt-solving sessions that ensure no question goes unanswered.
         </p>
       </div>
       </div>
@@ -84,12 +89,11 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
        <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i4} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 4 Title</p>
+        <p className='text-3xl text-center'>Modules</p>
         <p>
-          Facility 4 Description. Replace this text with your facility's
-          description.
+        Access well-structured modules that simplify complex topics and make learning easy and organized.
         </p>
       </div>
 
@@ -102,12 +106,11 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
      <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i5} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 5 Title</p>
+        <p className='text-3xl text-center'>Animated Video Lectures</p>
         <p>
-          Facility 5 Description. Replace this text with your facility's
-          description.
+        Engage with interactive animated videos that bring subjects to life and make learning fun and memorable.
         </p>
       </div>
 
@@ -120,12 +123,11 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
        <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i6} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 6 Title</p>
+        <p className='text-3xl text-center'>Digital Classrooms</p>
         <p>
-          Facility 6 Description. Replace this text with your facility's
-          description.
+        Experience modern, technology-driven classrooms that enhance learning through digital tools and resources.
         </p>
       </div>
       </div>
@@ -139,12 +141,12 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
         <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i7} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 7 Title</p>
+        <p className='text-3xl text-center'>Regular Parents Meeting</p>
         <p>
-          Facility 7 Description. Replace this text with your facility's
-          description.
+        Foster stronger communication with consistent parent-teacher meetings that ensure alignment on your child’s progress and goals.
+        
         </p>
       </div>
 
@@ -157,13 +159,13 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
        <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i8} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 8 Title</p>
+        <p className='text-3xl text-center'>Monthly Progress Card:</p>
         <p>
-          Facility 8 Description. Replace this text with your facility's
-          description.
-        </p>
+        Keep track of performance with detailed monthly reports that highlight strengths and areas for improvement.
+
+       </p>
       </div>
 
       {/* Facility 9 */}
@@ -175,12 +177,11 @@ const Facilities = () => {
         onMouseLeave={handleMouseLeave}
       >
        <div className='imgcard'>
-        <img src={i1} className='m-10 imgcard' alt='Facility 1' />
+        <img src={i9} className='m-10 imgcard' alt='Facility 1' />
         </div>
-        <p className='text-3xl text-center'>Facility 9 Title</p>
+        <p className='text-3xl text-center'>Educational Trip & Picnic</p>
         <p>
-          Facility 9 Description. Replace this text with your facility's
-          description.
+        Combine learning with fun through educational trips and picnics that broaden students' perspectives beyond the classroom.
         </p>
       </div>
       </div>

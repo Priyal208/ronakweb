@@ -4,7 +4,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../index.css';
-import i3 from '../imgs/Specially for.png';
+import i1 from '../imgs/1.png';
+import i2 from '../imgs/2.png';
+import i3 from '../imgs/3.png'; 
+import i4 from '../imgs/4.png';
 import '../global.css'
 
 const ImageCarousel = () => {
@@ -41,13 +44,13 @@ const ImageCarousel = () => {
     ],
   };
 
-  const images = [i3, i3, i3, i3]; // Alternating between logo and i1
+  const images = [i1, i2, i3, i4]; // Alternating between logo and i1
 
   return (
     <div style={{ width: '100%' }}>
       <Slider {...carouselSettings}>
         {images.map((src, index) => (
-          <div key={index} className="carousel-image-container mt-[5%]">
+          <div key={index} className="carousel-image-container mt-[5%] md:mt-[20%]">
             <img src={src} alt={`Image ${index + 1}`} className="carousel-image" />
           </div>
         ))}

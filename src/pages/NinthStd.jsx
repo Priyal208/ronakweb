@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import n1 from '../imgs/Ninth1.jpg';
+import n1 from '../imgs/1 (2).png';
 import Footer from '../components/Footer';
 import { RxDoubleArrowDown } from 'react-icons/rx';
 import '../global.css'
@@ -71,14 +71,9 @@ const NinthStd = () => {
           <div className='font-thin text-[40px] md:text-[30px] sm:text-[18px] '>TARGET COMPETITIVE EXAMS</div>
           <div className='text-white  text-md p-3 ' style={textVisibility1}>
               <ul className='space-y-7'>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim ad placeat recusandae ratione nobis fugiat autem perferendis, expedita velit odit soluta fuga quas, eligendi explicabo, dolore tempora? Cum, eius.
-               </li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? </li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? </li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in?</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? </li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in?</li>
-              </ul>
+                <>
+In addition to board exam preparation, we place significant emphasis on Olympiad training. Olympiads play a crucial role in developing analytical and problem-solving skills, which are not only beneficial for academic excellence but also lay a strong foundation for competitive exams like JEE and NEET. Our Olympiad training covers advanced concepts, focusing on critical thinking and innovative approaches, helping students build a strong foundation for their future academic and professional pursuits.
+                </></ul>
               </div>
           <RxDoubleArrowDown
             color='white'
@@ -93,19 +88,21 @@ const NinthStd = () => {
           <div className='text-white text-md p-3' style={textVisibility2}>
               <ul>
               <ul className='space-y-7'>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim ad placeat recusandae ratione nobis fugiat autem perferendis, expedita velit odit soluta fuga quas, eligendi explicabo, dolore tempora? Cum, eius.
-                Atque quisquam beatae sed quae? Quos molestias voluptas non repellat ad reiciendis natus, quae error repudiandae id exercitationem consequatur in eos repellendus mollitia ullam reprehenderit totam libero odit corporis laboriosam.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? A.
-                Sed quaerat ducimus blanditiis magnam iure impedit, laborum quae, temporibus odit magni officiis libero incidunt, porro maxime. Recusandae vel cupiditate veritatis totam inventore odio consequuntur neque ipsum? Laborum, recusandae quo.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? A.
-                Sed quaerat ducimus blanditiis magnam iure impedit, laborum quae, temporibus odit magni officiis libero incidunt, porro maxime. Recusandae vel cupiditate veritatis totam inventore odio consequuntur neque ipsum? Laborum, recusandae quo.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? A.
-                Sed quaerat ducimus blanditiis magnam iure impedit, laborum quae, temporibus odit magni officiis libero incidunt, porro maxime. Recusandae vel cupiditate veritatis totam inventore odio consequuntur neque ipsum? Laborum, recusandae quo.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? A.
-                Sed quaerat ducimus blanditiis magnam iure impedit, laborum quae, temporibus odit magni officiis libero incidunt, porro maxime. Recusandae vel cupiditate veritatis totam inventore odio consequuntur neque ipsum? Laborum, recusandae quo.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam repellendus animi, deserunt et at doloribus id eaque molestiae dolor incidunt exercitationem quis suscipit necessitatibus fugiat nemo praesentium in? A.
-                Sed quaerat ducimus blanditiis magnam iure impedit, laborum quae, temporibus odit magni officiis libero incidunt, porro maxime. Recusandae vel cupiditate veritatis totam inventore odio consequuntur neque ipsum? Laborum, recusandae quo.</li>
-              </ul>
+                <>
+              For board exams, we primarily focus on the NCERT curriculum, ensuring thorough understanding across all subjects:
+
+- *Mathematics*
+- *Science*
+- *English*
+- *Gujarati*
+- *Social Science*
+- *Sanskrit*
+- *Hindi*
+
+We believe in a unique, patient, and creative teaching method that allows students to grasp concepts effectively within the classroom itself. Our experienced faculty uses interactive learning techniques to make lessons engaging and easily comprehensible. We also provide regular assessments and personalized feedback to monitor progress and boost confidence.
+
+</>
+                </ul>
               </ul>
               </div>
           <RxDoubleArrowDown

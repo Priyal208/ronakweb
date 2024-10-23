@@ -2,13 +2,22 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight, FaPlay } from 'react-icons/fa';
-import logo from '../imgs/Screenshot 2024-01-10 223757.png';
-import i1 from '../imgs/Screenshot 2024-01-13 195848.png';
-import i2 from '../imgs/Screenshot 2024-01-13 195905.png';
+import logo from '../imgs/dhr.png';
+import d from '../imgs/dr.png'
+import i1 from '../imgs/testii/1.png';
+import i2 from '../imgs/testii/2.png';
+import i3 from '../imgs/testii/3.png';
+import i4 from '../imgs/testii/4.png';
+import i5 from '../imgs/testii/5.png';
+import i6 from '../imgs/testii/6.png';
+import i7 from '../imgs/testii/7.png';
+import i8 from '../imgs/testii/8.png';
+import i9 from '../imgs/testii/9.png';
+
 import '../global.css'
 
 const Testimonials = () => {
-  const images = [i1, i2, i1, i2, i1];
+  const images = [i1, i2, i3, i4, i5, i6, i7, i8, i9];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -72,7 +81,7 @@ const Testimonials = () => {
         </div>
         <div className='w-[50%] m-5 items-center'>
           <div className='logo-container'>
-            <img className='logo-image' src={logo} alt='logo' />
+            <img className='logo-image' src={d} alt='logo' />
             <div className='play-button-container'>
               <a
                 href='https://www.instagram.com/reel/CqhgTskIybg/?igsh=czM4ZTZmOHF5aWho'

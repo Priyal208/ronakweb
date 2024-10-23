@@ -1,8 +1,7 @@
 import React from 'react'
-import r1 from '../imgs/Res1.avif'
-import r2 from '../imgs/Res2.jpg'
-import r3 from '../imgs/Cour1.png'
-import r4 from '../imgs/Cour3.webp'
+import r1 from '../imgs/re1.jpg'
+import r2 from '../imgs/re2.jpg'
+import r3 from '../imgs/re3.jpg'
 import '../global.css'
 
 const Results = () => {
@@ -16,9 +15,8 @@ const Results = () => {
      <div className='w-[35%] h-[100%] overflow-hidden sm:w-[90%] '>
         <img src={r2}alt="" className='object-contain' />
      </div>
-     <div className='w-[30%] h-[100%] sm:w-[90%] overflow-hidden '>
-        <div className='w-[100%] h-1/2  overflow-hidden '><img src={r3} alt="" className='object-contain' /></div>
-        <div className='w-[100%] h-1/2 mt-2 overflow-hidden'><img src={r4} alt="" className='object-contain'/></div>
+     <div className='w-[35%] h-[100%] overflow-hidden sm:w-[90%] '>
+        <img src={r3}alt="" className='object-contain' />
      </div>
     </div>
     </div>
