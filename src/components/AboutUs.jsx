@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import i3 from '../imgs/left.png';
-import i from '../imgs/right.png'
-import '../global.css'
+import i from '../imgs/right.png';
+import '../global.css';
 
 const AboutUs = () => {
   const [experience, setExperience] = useState(0);
@@ -12,14 +12,27 @@ const AboutUs = () => {
     const studentsLimit = 10000; // Set the limit for students counting
 
     const experienceInterval = setInterval(() => {
-      setExperience((prevExperience) => (prevExperience < experienceLimit ? prevExperience + 1 : experienceLimit));
+      setExperience((prev) => {
+        if (prev < experienceLimit) {
+          return prev + 1;
+        } else {
+          clearInterval(experienceInterval);
+          return experienceLimit;
+        }
+      });
     }, 100);
 
     const studentsInterval = setInterval(() => {
-      setStudentsTaught((prevStudentsTaught) => (prevStudentsTaught < studentsLimit ? prevStudentsTaught + 1 : studentsLimit));
-    }, .01);
+      setStudentsTaught((prev) => {
+        if (prev < studentsLimit) {
+          return prev + 100; // Increment by 100 for smoother counting
+        } else {
+          clearInterval(studentsInterval);
+          return studentsLimit;
+        }
+      });
+    }, 50); // Adjusted to prevent performance issues
 
-    // Cleanup intervals when the limit is reached
     return () => {
       clearInterval(experienceInterval);
       clearInterval(studentsInterval);
@@ -27,37 +40,57 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className='flex flex-wrap lg:flex-row py-20' id='about'>
-      <div className='w-[25%]'>
-          <img src={i3} alt='About Us' className='w-full lg:w-auto' />
-        </div>
-
-      <div className='lg:w-[25%] p-5  sm:w-[100%]'>
-        <p className='text-6xl md:text-2xl text-center ml-[10%]'>ABOUT US</p>
-        <p className='py-10 text-center p-5 md:text-sm ml-[10%]'>
-        Welcome to Ronak Institute, a legacy of excellence in education that has stood strong for over 35 years. Established with the goal of nurturing young minds, we have had the privilege of teaching over 10,000 students, many of whom have gone on to become IITians, engineers, doctors, Chartered Accountants (CAs), Company Secretaries (CS), and successful professionals across various fields. Our commitment to quality education and personal growth has established us as a trusted name in academic coaching.</p>
-      </div>
-      
-      <div className='lg:w-[25%] sm:w-[100%] flex flex-row'>
-        <div className='w-[40%] ml-[40%]'>
-          <div className='p-10'>
-            <p className='text-5xl md:text-2xl font-bold'>{experience}+</p>
-            <p className='text-xl md:text-base'>years of experience</p>
-          </div>
-          <div className='p-10'>
-            <p className='text-5xl md:text-2xl font-bold'>{studentsTaught}+</p>
-            <p className='text-xl md:text-base'>students taught</p>
-          </div>
-        </div>
+    <div
+      className="flex flex-col lg:flex-row items-center lg:items-stretch py-20 bg-gray-50"
+      id="about"
+    >
+      {/* Left Image */}
+      <div className="w-full lg:w-[25%] flex justify-center lg:justify-start">
+        <img
+          src={i3}
+          alt="About Us"
+          className="h-full object-contain max-h-[500px]"
+        />
       </div>
 
-      <div className='w-[25%]'>
-          <img src={i} alt='About Us' className='w-full lg:w-auto' />
+      {/* About Us Text */}
+      <div className="w-full lg:w-[50%] p-5 text-center lg:text-left">
+        <h1 className="text-4xl lg:text-6xl font-bold">ABOUT US</h1>
+        <p className="py-10 text-lg md:text-sm text-gray-700 leading-relaxed">
+          Welcome to Ronak Institute, a legacy of excellence in education that
+          has stood strong for over 35 years. Established with the goal of
+          nurturing young minds, we have had the privilege of teaching over
+          10,000 students, many of whom have gone on to become IITians,
+          engineers, doctors, Chartered Accountants (CAs), Company Secretaries
+          (CS), and successful professionals across various fields. Our
+          commitment to quality education and personal growth has established us
+          as a trusted name in academic coaching.
+        </p>
+      </div>
+
+      {/* Counters */}
+      <div className="w-full lg:w-[25%] flex justify-center lg:justify-start">
+        <div className="text-center lg:text-left">
+          <div className="p-5">
+            <p className="text-5xl md:text-2xl font-bold">{experience}+</p>
+            <p className="text-lg md:text-base">years of experience</p>
+          </div>
+          <div className="p-5">
+            <p className="text-5xl md:text-2xl font-bold">{studentsTaught}+</p>
+            <p className="text-lg md:text-base">students taught</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="w-full lg:w-[25%] flex justify-center lg:justify-end">
+        <img
+          src={i}
+          alt="About Us"
+          className="h-full object-contain max-h-[500px]"
+        />
       </div>
     </div>
-
-
-
   );
 };
 
