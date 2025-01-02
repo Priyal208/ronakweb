@@ -71,7 +71,7 @@ const Facilities = () => {
 
   return (
     <div className='px-5 py-20' id='facilities'>
-      <div className='text-6xl font-semibold text-center mb-10'>
+      <div className='text-6xl font-bold text-center mb-10 text-blue-900'>
         <p>OUR FACILITIES</p>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>

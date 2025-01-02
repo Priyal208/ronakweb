@@ -14,22 +14,17 @@ const OurApp = () => {
 
       <div className='w-[70%] flex flex-col' data-aos="fade-left">
         <div> 
-          <p className='text-5xl md:text-2xl text-center  '>OUR APP</p>
-          <p className='pt-10 text-center p-5 md:text-sm'>
-          Ronak Institute App*
-
-Welcome to the official Ronak Institute app—your personalized learning companion designed to enhance your educational journey! Our app is equipped with a variety of features to ensure that students, parents, and teachers stay connected and informed at all times. Here’s what you can expect:
-
-- *Attendance Tracking*: Stay updated on your daily attendance with real-time tracking, ensuring consistent learning and accountability.
-- *Daily Test Updates*: Get instant notifications about daily tests, helping you keep up with the syllabus and prepare effectively.
-- *Study Materials*: Access all necessary study materials directly on your device, making learning flexible and convenient.
-- *Recorded Video Lectures*: Missed a class? No problem! Watch recorded lectures anytime, anywhere, to revise concepts at your own pace.
-- *SMS Updates*: Receive important announcements and updates via SMS to ensure you never miss any crucial information.
-- *Chatbot Assistance*: Have questions? Get quick answers through our in-app chatbot, available 24/7 to guide you.
-- *Circulars & Notices*: Stay informed with regular circulars and notices, keeping you updated about institute events and activities.
-- *Online Exams*: Practice and assess your knowledge with online exams, simulating a real test environment right from your home.
-
-Experience a seamless and effective learning environment with the Ronak Institute app—where education meets technology!</p>
+          <p className='md:text-2xl text-center text-blue-900 font-bold text-6xl '>OUR APP</p>
+          <p className='pt-10 text-lg text-center p-5 md:text-sm'>
+          Welcome to the official Ronak Institute app—your personalized learning companion! Our app helps students, parents, and teachers stay connected. Key features include:
+          <ul className='list-disc text-lg text-left mx-auto md:mx-0 md:text-base mb-8'>
+            <li>Attendance Tracking</li>
+            <li>Daily Test Updates</li>
+            <li>Study Materials & Recorded Lectures</li>
+            <li>SMS Updates & Chatbot Assistance</li>
+            <li>Online Exams</li>
+          </ul>
+       </p>
           <div className=' text-center'>
             <button
               className=' text-3xl md:text-xl sm:text-xs border-spacing-2 border-gray-900 btn1 p-2'

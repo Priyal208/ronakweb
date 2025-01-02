@@ -347,6 +347,8 @@
   width: 700px;
   filter: brightness(1);
 }
+
+
 /* ImageCarousel.css */
 .carousel-image-container {
   display: flex;
@@ -369,7 +371,8 @@
 .card {
   transition: transform 0.5s ease-in-out;
   background: white;
-  
+  box-shadow: 20px 20px 30px 5px rgba(0, 0, 0, 0.7);
+
 }
 .hovered {  
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -396,6 +399,7 @@
 .imgcard{
   position:relative;
   z-index: 3;
+  
  }
  .imgcard::after{
   content: '';
@@ -406,7 +410,7 @@
   top:0;
  z-index: -1;
  border-radius: 50%;
- box-shadow: 0px 1px 3px 0px black;
+ box-shadow: 10px 10px 10px 0px black;
 
  }
 
@@ -502,3 +506,4 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+

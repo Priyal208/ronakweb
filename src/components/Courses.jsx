@@ -2,12 +2,11 @@ import React from 'react';
 import c1 from '../imgs/9.png';
 import c2 from '../imgs/10.png';
 import { Link } from "react-router-dom";
-import backgroundImage from "../imgs/bgimg.avif"
 import '../global.css'
 const Courses = () => {
     return (
-  <div className=' bg-slate-400 pb-10 py-20' id='courses'>
-    <div className='text-black  text-center text-6xl '>COURSES</div>
+  <div id='courses'>
+    <div className='text-blue-900 font-bold  text-center text-6xl '>COURSES</div>
 
   
       <div className="w-full h-[65vh] flex md:flex-col md:space-y-10 md:space-x-0  items-center justify-center space-x-32 ">

@@ -35,9 +35,9 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-20" id="testimonials">
+    <div className="flex flex-col items-center" id="testimonials">
       <div className="w-[100%] text-center my-5">
-        <p className="text-6xl md:text-2xl text-center">TESTIMONIALS</p>
+        <p className="text-6xl md:text-2xl text-center text-blue-900 font-bold">TESTIMONIALS</p>
       </div>
 
       {/* Top Images Section */}

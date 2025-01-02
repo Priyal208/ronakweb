@@ -9,9 +9,9 @@ const Video = () => {
   }, []);
 
   return (
-    <div className= 'py-20'  id='videos'>
+    <div className= 'pt-20'  id='videos'>
         <div className='text-6xl font-semibold text-center '>
-        <p>YOUTUBE VIDEOS </p>
+        <p className='text-blue-900 font-bold text-6xl'>YOUTUBE VIDEOS </p>
         </div>
       <div className="flex lg:flex-row sm:flex-col pt-10 md:flex-wrap items-center justify-center h-[50%] w-[100%]" id="glimpses">
           <div className="lg:p-10 md:p-5 lg:w-1/3 md:h-[200px] lg:h-[350px] sm:h-[30%] sm:w-[70%]" data-aos="fade-right">
