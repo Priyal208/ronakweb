@@ -9,7 +9,7 @@ const Video = () => {
   }, []);
 
   return (
-    <div className='bg-slate-400 py-20'  id='videos'>
+    <div className= 'py-20'  id='videos'>
         <div className='text-6xl font-semibold text-center '>
         <p>YOUTUBE VIDEOS </p>
         </div>
